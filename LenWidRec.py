@@ -1,14 +1,26 @@
-Line = int(input("Please enter rectangle width: "))
+XperRow = int(input("Please enter rectangle width: "))
+#length of each line (so number of times to print "x")
 
-RecLen = int(input("Enter height of rectangle: "))
-Counter = RecLen
-while Counter>0:
+XRows = int(input("Enter height of rectangle: "))
+#hight of rectangle (so number of lines)
+
+Counter = 0
+#counter is now equal to the number of lines
+
+while Counter<XRows:
+    #do the below when Counter is greater than 0
+
     count = 0
-    while count < Line - 1:
-        print("x", end="", flush=True)
+    #this resets the number of x on each line
+
+    while count < XperRow:
+        print("x", end="")
         count += 1
 
-    print("x")
-    Counter-=1
+    print("")
+    #normal print to finish line and move on
 
-print(f"A {Line}x{RecLen} rectangle has been drawn")
+    Counter+=1
+    #counter states how many rows have been printed
+
+print(f"A {XperRow}x{XRows} rectangle has been drawn")
