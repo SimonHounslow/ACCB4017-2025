@@ -1,15 +1,19 @@
-def MyFirstFuction():
-    print("We are now inside a function")
-    print("We now do as much or as little as we like")
-    num1 = int(input("Enter num1"))
-    num2 = int(input("Enter num2"))
-    print("The result is ,", num1+num2)
-    print("We are now leaving the function")
+def addnumbers(Val1, Val2):
+    return Val1+Val2
 
+def subnumbers(Val1, Val2):
+    return Val1-Val2
 
+def multinumbers(Val1, Val2):
+    return Val1*Val2
 
-print("We are now calling the function")
+def divnumbers(Val1, Val2):
+    return round(Val1/Val2,0)
 
-MyFirstFuction()
+num1 = int(input("Enter num1"))
+num2 = int(input("Enter num2"))
 
-print("We have left the function")
+print(addnumbers(num1,num2))
+print(subnumbers(num1,num2))
+print(multinumbers(num1,num2))
+print(divnumbers(num1,num2))
